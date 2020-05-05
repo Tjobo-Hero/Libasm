@@ -6,7 +6,7 @@
 #    By: tim <tim@student.codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/03/25 12:11:47 by tim           #+#    #+#                  #
-#    Updated: 2020/05/05 14:59:27 by tim           ########   odam.nl          #
+#    Updated: 2020/05/05 18:42:09 by tim           ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ _IPURPLE	=	\x1b[45m
 _ICYAN		=	\x1b[46m
 _IWHITE		=	\x1b[47m
 
-SRCS 		= ft_strlen.s ft_strcpy.s ft_strcmp.s
+SRCS 		= ft_strlen.s ft_strcpy.s ft_strcmp.s ft_read.s
 
 OBJS		= $(SRCS:.s=.o)
 
@@ -74,5 +74,5 @@ test: 			$(NAME)
 				@gcc $(FLAGS) -o $(TEST) main.c $(NAME)
 				@echo "🕺$(_BOLD)$(_BLUE)'"$(TEST)"' CREATED$(_END)🕺"
 				@echo "🤞$(_BOLD)$(_BLUE)RUNNING TEST$(_END)🤞"
-				@./TEST < Makefile
+				@./TEST < text.txt
 			
