@@ -6,7 +6,7 @@
 /*   By: tim <tim@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/03/25 12:06:56 by tim           #+#    #+#                 */
-/*   Updated: 2020/05/05 19:00:21 by tim           ########   odam.nl         */
+/*   Updated: 2020/05/25 11:01:51 by tim           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,11 +62,15 @@ void	test_read_and_write(void)
 	char	real_print[1000];
 	ssize_t	ret;
 
-	ret = read(STDIN_FILENO, real_buffer, 15);
+	ret = read(STDIN_FILENO, real_buffer, 100);
 	real_buffer[ret] = 0;
 	printf("-------------------------->READ<-------------------------\n");
-	printf("READ:\n%s\nRET:[%zd]\n", strncpy(real_print, real_buffer, 15), ret);
+	printf("READ:\n%s\nRET:[%zd]\n", strncpy(real_print, real_buffer, 100), ret);
 	printf("-------------------->GETTING TO THE END<-----------------\n\n");
+	printf("-------------------------->WRITE<-------------------------\n");
+	printf("WRITE:\n%s\nRET:[%zd]\n", strncpy(real_print, real_buffer, 100), ret);
+	printf("-------------------->ONE MORE TO GO!<-----------------\n\n");
+	
 }
 
 int		main(void)
