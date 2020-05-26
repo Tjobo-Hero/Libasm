@@ -6,7 +6,7 @@
 /*   By: tim <tim@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/05 12:54:20 by tim           #+#    #+#                 */
-/*   Updated: 2020/05/26 14:27:41 by tim           ########   odam.nl         */
+/*   Updated: 2020/05/26 16:09:16 by tim           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ char		*ft_strcpy(char *dst, const char *src);
 int			ft_strcmp(const char *s1, const char *s2);
 ssize_t		ft_read(int fildes, void *buf, size_t nbyte);
 ssize_t		ft_write(int fildes, const void *buf, size_t nbyte);
+char		*ft_strdup(const char *s1);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: tim <tim@student.codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/03/25 12:11:47 by tim           #+#    #+#                  #
-#    Updated: 2020/05/26 15:25:31 by tim           ########   odam.nl          #
+#    Updated: 2020/05/26 16:07:35 by tim           ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ _IPURPLE	=	\x1b[45m
 _ICYAN		=	\x1b[46m
 _IWHITE		=	\x1b[47m
 
-SRCS 		= ft_strlen.s ft_strcpy.s ft_strcmp.s ft_read.s ft_write.s
+SRCS 		= ft_strlen.s ft_strcpy.s ft_strcmp.s ft_read.s ft_write.s ft_strdup.s
 
 OBJS		= $(SRCS:.s=.o)
 

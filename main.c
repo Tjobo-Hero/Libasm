@@ -6,7 +6,7 @@
 /*   By: tim <tim@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/03/25 12:06:56 by tim           #+#    #+#                 */
-/*   Updated: 2020/05/26 15:41:16 by tim           ########   odam.nl         */
+/*   Updated: 2020/05/26 16:14:49 by tim           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -142,6 +142,19 @@ int		main(void)
 	perror("ERRNO RESULT");
 	printf("-------------------->ONE MORE TO GO!<-----------------\n\n");
 	/*                                TEST_STRDUP						*/
-	
+	printf("-------------------------->STRDUP<-------------------------\n");
+	printf("REAL:[%s]\n", strdup("TEST"));
+	printf("MY:  [%s]\n", ft_strdup("TEST"));
+	printf("\n");
+	printf("REAL:[%s]\n", strdup("YOU LIKE"));
+	printf("MY:  [%s]\n", ft_strdup("YOU LIKE"));
+	printf("\n");
+	printf("REAL:[%s]\n", strdup("I LIKE TO COUNT 1234567"));
+	printf("MY:  [%s]\n", ft_strdup("I LIKE TO COUNT 1234567"));
+	printf("\n");
+	// printf("REAL:[%s]\n", strdup(NULL));
+	// printf("MY: [%s]\n", ft_strdup(NULL));
+	printf("-------------------->!!!FINISH!!!<-----------------\n\n");
+
 	return (0);
 }
