@@ -6,7 +6,7 @@
 /*   By: tim <tim@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/05/05 12:54:20 by tim           #+#    #+#                 */
-/*   Updated: 2020/05/26 16:09:16 by tim           ########   odam.nl         */
+/*   Updated: 2020/06/03 11:17:43 by tvan-cit      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <fcntl.h>
+# include <errno.h>
 
 size_t		ft_strlen(const char *str);
 char		*ft_strcpy(char *dst, const char *src);

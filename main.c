@@ -6,13 +6,11 @@
 /*   By: tim <tim@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/03/25 12:06:56 by tim           #+#    #+#                 */
-/*   Updated: 2020/05/26 16:14:49 by tim           ########   odam.nl         */
+/*   Updated: 2020/06/03 11:17:49 by tvan-cit      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libasm.h"
-#include <errno.h>
-
 
 int		main(void)
 {
@@ -155,6 +153,5 @@ int		main(void)
 	// printf("REAL:[%s]\n", strdup(NULL));
 	// printf("MY: [%s]\n", ft_strdup(NULL));
 	printf("-------------------->!!!FINISH!!!<-----------------\n\n");
-
 	return (0);
 }
