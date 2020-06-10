@@ -6,7 +6,7 @@
 /*   By: tim <tim@student.codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/03/25 12:06:56 by tim           #+#    #+#                 */
-/*   Updated: 2020/06/03 11:17:49 by tvan-cit      ########   odam.nl         */
+/*   Updated: 2020/06/04 14:55:49 by tvan-cit      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int		main(void)
 
 	/*                                TEST_STRCMP						*/
 	printf("------------------------>STRCMP<-------------------------\n");
-	printf("REAL:[%d] --- OWN:[%d]\n", strcmp("Wester", "WAlter"),
+	printf("REAL:[%d] --- OWN:[%d]\n", strcmp("", "WAlter"),
 	ft_strcmp("Wester", "Walter"));
 	printf("REAL:[%d] --- OWN:[%d]\n", strcmp("OK", "XOXO"),
 	ft_strcmp("OK", "XOXO"));
